@@ -12,7 +12,7 @@
 
         <!--是否强制插入插入代码，Robust默认在debug模式下是关闭的，开启这个选项为true会在debug下插入代码-->
         <!--<forceInsert>true</forceInsert>-->
-        <forceInsert>true</forceInsert>
+        <forceInsert>false</forceInsert>
 
         <!--是否捕获补丁中所有反射的异常，建议上线的时候这个开关的值为true，测试的时候为false-->
         <catchReflectException>false</catchReflectException>
@@ -38,7 +38,7 @@
 
     <!--补丁的包名-->
     <patchPackname name="patchPackname">
-        <name>vincent.robusttest.Pack</name>
+        <name>com.meituan.robust.patch</name>
     </patchPackname>
 
     <!--自动化补丁中，不需要反射处理的类，这个配置项慎重选择-->
